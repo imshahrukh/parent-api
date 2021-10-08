@@ -50,6 +50,12 @@ app.get("/", (req, res) => {
     message: "Api Working",
   });
 });
+app.get("/shahrukh", (req, res) => {
+  console.log("data");
+  res.status(200).json({
+    message: "Shahrukh aPi",
+  });
+});
 app.listen(port, () => {
   console.log("server Activited");
 });
