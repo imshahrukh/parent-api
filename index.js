@@ -38,6 +38,7 @@ app.use("/v1", require("./router/STeacherRouter"));
 app.use("/v1", require("./router/SCircularRouter"));
 app.use("/v1", require("./router/SViolationRouter"));
 app.use("/v1", require("./router/SFineRouter"));
+app.use("/v1", require("./router/SFaceRouter"));
 
 // localhost:3000/v1/member
 app.use("/v1", require("./router/member_router"));
@@ -47,7 +48,7 @@ app.use("/v1", require("./router/login_router"));
 app.get("/", (req, res) => {
   console.log("data");
   res.status(200).json({
-    message: "Api Working",
+    message: "updated API",
   });
 });
 app.get("/shahrukh", (req, res) => {
