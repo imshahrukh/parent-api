@@ -4,7 +4,10 @@ const fineRouter = express.Router();
 // POST
 // localhost:8000/v1/member
 
-fineRouter.route("/faceDetection").post(fineController.addFace);
+fineRouter
+  .route("/faceDetection")
+  .post(fineController.addFace)
+  .get(fineController.getFaces);
 
 // POST
 // localhost:8000/v1/member/12345
